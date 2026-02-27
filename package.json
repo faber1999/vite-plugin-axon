@@ -1,6 +1,6 @@
 {
   "name": "@faber1999/vite-plugin-axon",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "Vite plugin for axon.js — auto-wraps reactive JSX expressions in arrow functions",
   "author": "Faber Grajales Hincapié <faber1999> (https://github.com/faber1999)",
   "repository": {

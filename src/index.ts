@@ -81,6 +81,16 @@ export default function axonPlugin(): Plugin {
     name: 'vite-plugin-axon',
     enforce: 'pre',
 
+    config() {
+      return {
+        esbuild: {
+          jsxFactory: 'h',
+          jsxFragment: 'Fragment',
+          jsxInject: `import { h, Fragment } from '@faber1999/axon.js/jsx'`,
+        },
+      };
+    },
+
     transform(code: string, id: string) {
       // Only process JSX/TSX files
       if (!id.endsWith('.jsx') && !id.endsWith('.tsx')) return null;
